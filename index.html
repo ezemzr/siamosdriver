@@ -131,8 +131,15 @@
 
                 <div id="choferes" class="bg-gray-50 p-8 rounded-2xl border border-gray-200">
                     <h3 class="text-2xl font-bold text-uber mb-2">Registro de Choferes</h3>
-                    <p class="text-gray-500 mb-6 text-sm">Postulate y empezá a manejar hoy mismo.</p>
-                    
+                    <p class="text-gray-500 mb-4 text-sm">Postulate y empezá a manejar hoy mismo.</p>
+
+                    <div class="bg-white border border-gray-100 p-5 rounded-xl mb-6 shadow-inner text-center">
+                        <p class="text-uber font-semibold mb-3">¿Querés que te contactemos más rápido?</p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe_FISz44VqGkorkiO48YIMP6DOK-Nq159U_UtaVQvavSMyjA/viewform?usp=publish-editor" target="_blank" class="inline-flex items-center gap-2 bg-uberGreen text-white px-5 py-2.5 rounded-full font-semibold hover:bg-uberGreenHover transition text-sm shadow">
+                            <i data-lucide="forms" class="w-4 h-4"></i>
+                            Completar Formulario Prioritario
+                        </a>
+                    </div>
                     <form id="driverForm" onsubmit="submitForm(event, 'driver')">
                         <div class="grid grid-cols-2 gap-4 mb-4">
                             <input type="text" name="nombre" placeholder="Nombre" required class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-uberGreen">
