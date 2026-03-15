@@ -15,9 +15,9 @@
             theme: {
                 extend: {
                     colors: {
-                        uber: '#000000',
-                        uberGreen: '#00c853',
-                        uberGreenHover: '#00a844'
+                        siamoBlue: '#081221', // Azul medianoche ultra oscuro
+                        siamoOrange: '#E67E22', 
+                        siamoOrangeHover: '#D35400'
                     }
                 }
             }
@@ -26,41 +26,42 @@
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">
 
-    <nav class="bg-uber text-white fixed w-full z-50 shadow-lg">
+    <nav class="bg-siamoBlue text-white fixed w-full z-50 shadow-xl border-b border-gray-800">
         <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between items-center py-2"> <a href="#inicio" class="text-xl font-bold tracking-tight flex items-center gap-3">
-                    <svg class="h-8 w-auto text-uberGreen" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <div class="flex justify-between items-center py-3"> 
+                <a href="#inicio" class="text-xl font-bold tracking-tight flex items-center gap-3">
+                    <svg class="h-8 w-auto text-siamoOrange" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5H6.5c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 7h11l1.4 4H5.1L6.5 7zM5 15c-1.1 0-2-.9-2-2h18c0 1.1-.9 2-2 2H5z"/>
                         <circle cx="7" cy="17" r="1.5" fill="white"/> <circle cx="17" cy="17" r="1.5" fill="white"/>
                     </svg>
-                    <span>Siamo Driver</span>
+                    <span>Siamo <span class="text-siamoOrange">Driver</span></span>
                 </a>
                 <div class="hidden md:flex space-x-6 font-medium">
-                    <a href="#inicio" class="hover:text-uberGreen transition">Inicio</a>
-                    <a href="#servicio" class="hover:text-uberGreen transition">Cómo Funciona</a>
-                    <a href="#propietarios" class="hover:text-uberGreen transition">Dueños</a>
-                    <a href="#choferes" class="hover:text-uberGreen transition">Choferes</a>
+                    <a href="#inicio" class="hover:text-siamoOrange transition">Inicio</a>
+                    <a href="#servicio" class="hover:text-siamoOrange transition">Cómo Funciona</a>
+                    <a href="#propietarios" class="hover:text-siamoOrange transition">Dueños</a>
+                    <a href="#choferes" class="hover:text-siamoOrange transition">Choferes</a>
                 </div>
-                <a href="#contacto" class="bg-uberGreen hover:bg-uberGreenHover text-white px-5 py-2 rounded-full font-semibold transition hidden md:block shadow-md">
-                    Contacto Directo
+                <a href="#contacto" class="bg-siamoOrange hover:bg-siamoOrangeHover text-white px-6 py-2 rounded-full font-semibold transition hidden md:block shadow-lg">
+                    Contacto
                 </a>
             </div>
         </div>
     </nav>
 
-    <section id="inicio" class="pt-40 pb-20 px-4 bg-white text-center">
+    <section id="inicio" class="pt-48 pb-24 px-4 bg-white text-center">
         <div class="max-w-4xl mx-auto">
-            <h1 class="text-5xl md:text-6xl font-extrabold text-uber leading-tight mb-6">
-                Maximizá tus ganancias con <span class="text-uberGreen">Siamo Driver</span>
+            <h1 class="text-5xl md:text-6xl font-extrabold text-siamoBlue leading-tight mb-6">
+                Maximizá tus ganancias con <span class="text-siamoOrange">Siamo Driver</span>
             </h1>
             <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-                Conectamos dueños de vehículos con choferes verificados en Mendoza. Generá ingresos pasivos alquilando tu auto, o trabajá manejando con total respaldo.
+                Gestión profesional de flotas en Mendoza. Conectamos propietarios con choferes de confianza bajo un sistema seguro y transparente.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#propietarios" class="bg-uber text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-800 transition shadow-lg flex items-center justify-center gap-2 border-b-4 border-uberGreen">
-                    <i data-lucide="key"></i> Quiero alquilar mi auto
+                <a href="#propietarios" class="bg-siamoBlue text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-black transition shadow-2xl flex items-center justify-center gap-2 border-b-4 border-siamoOrange">
+                    <i data-lucide="key"></i> Alquilar mi auto
                 </a>
-                <a href="#choferes" class="bg-uberGreen text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-uberGreenHover transition shadow-lg flex items-center justify-center gap-2">
+                <a href="#choferes" class="bg-siamoOrange text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-siamoOrangeHover transition shadow-xl flex items-center justify-center gap-2">
                     <i data-lucide="steering-wheel"></i> Quiero manejar
                 </a>
             </div>
@@ -70,106 +71,89 @@
     <section id="servicio" class="py-20 bg-gray-100 px-4">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-uber">¿Cómo funciona nuestro servicio?</h2>
-                <div class="w-24 h-1 bg-uberGreen mx-auto mt-4"></div>
+                <h2 class="text-3xl font-bold text-siamoBlue">Nuestro Sistema de Gestión</h2>
+                <div class="w-24 h-1 bg-siamoOrange mx-auto mt-4"></div>
             </div>
             
             <div class="grid md:grid-cols-2 gap-12">
-                <div class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-uber hover:shadow-md transition">
-                    <div class="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center mb-6">
-                        <i data-lucide="shield-check" class="w-8 h-8 text-uber"></i>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border-t-8 border-siamoBlue hover:shadow-xl transition-all">
+                    <div class="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mb-6 shadow-inner">
+                        <i data-lucide="shield-check" class="w-10 h-10 text-siamoBlue"></i>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-uber">Para Dueños de Autos</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-siamoBlue">Propietarios</h3>
                     <ul class="space-y-4 text-gray-600">
-                        <li class="flex gap-3"><i data-lucide="check-circle-2" class="text-uberGreen flex-shrink-0"></i> Poné a trabajar tu auto y generá ingresos semanales.</li>
-                        <li class="flex gap-3"><i data-lucide="check-circle-2" class="text-uberGreen flex-shrink-0"></i> Filtramos y evaluamos a los mejores choferes de Mendoza.</li>
-                        <li class="flex gap-3"><i data-lucide="check-circle-2" class="text-uberGreen flex-shrink-0"></i> Contratos de comodato y seguros específicos incluidos.</li>
+                        <li class="flex gap-3"><i data-lucide="check-circle-2" class="text-siamoOrange flex-shrink-0"></i> Renta fija mensual sin preocuparte por la gestión.</li>
+                        <li class="flex gap-3"><i data-lucide="check-circle-2" class="text-siamoOrange flex-shrink-0"></i> Choferes rigurosamente seleccionados en Mendoza.</li>
+                        <li class="flex gap-3"><i data-lucide="check-circle-2" class="text-siamoOrange flex-shrink-0"></i> Mantenimiento preventivo y control de unidad.</li>
                     </ul>
                 </div>
 
-                <div class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-uberGreen hover:shadow-md transition">
-                    <div class="w-14 h-14 bg-green-50 rounded-full flex items-center justify-center mb-6">
-                        <i data-lucide="wallet" class="w-8 h-8 text-uberGreen"></i>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border-t-8 border-siamoOrange hover:shadow-xl transition-all">
+                    <div class="w-16 h-16 bg-orange-50 rounded-2xl flex items-center justify-center mb-6 shadow-inner">
+                        <i data-lucide="wallet" class="w-10 h-10 text-siamoOrange"></i>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-uber">Para Choferes</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-siamoBlue">Choferes</h3>
                     <ul class="space-y-4 text-gray-600">
-                        <li class="flex gap-3"><i data-lucide="check-circle-2" class="text-uberGreen flex-shrink-0"></i> Unidades nuevas (Cronos, Logan, Etios) en perfecto estado.</li>
-                        <li class="flex gap-3"><i data-lucide="check-circle-2" class="text-uberGreen flex-shrink-0"></i> Turnos de 12hs o 24hs con total flexibilidad.</li>
-                        <li class="flex gap-3"><i data-lucide="check-circle-2" class="text-uberGreen flex-shrink-0"></i> Soporte 24/7 y liquidaciones semanales claras.</li>
+                        <li class="flex gap-3"><i data-lucide="check-circle-2" class="text-siamoOrange flex-shrink-0"></i> Vehículos modernos y habilitados.</li>
+                        <li class="flex gap-3"><i data-lucide="check-circle-2" class="text-siamoOrange flex-shrink-0"></i> Esquemas de trabajo flexibles (12hs / 24hs).</li>
+                        <li class="flex gap-3"><i data-lucide="check-circle-2" class="text-siamoOrange flex-shrink-0"></i> Soporte técnico y legal continuo.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 px-4 bg-white">
+    <section class="py-24 px-4 bg-white">
         <div class="max-w-6xl mx-auto">
             <div class="grid md:grid-cols-2 gap-12">
                 
-                <div id="propietarios" class="bg-gray-50 p-8 rounded-2xl border border-gray-200">
-                    <h3 class="text-2xl font-bold text-uber mb-2">Registrar mi Auto</h3>
-                    <p class="text-gray-500 mb-6 text-sm">Convertí tu vehículo en una renta fija sin complicaciones.</p>
+                <div id="propietarios" class="bg-gray-50 p-10 rounded-3xl border border-gray-200 shadow-sm">
+                    <h3 class="text-2xl font-bold text-siamoBlue mb-2">Registrar mi Vehículo</h3>
+                    <p class="text-gray-500 mb-8">Comenzá a rentabilizar tu capital hoy mismo.</p>
                     
-                    <form id="ownerForm" onsubmit="submitForm(event, 'owner')">
-                        <div class="grid grid-cols-2 gap-4 mb-4">
-                            <input type="text" name="nombre" placeholder="Nombre" required class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-uberGreen">
-                            <input type="text" name="apellido" placeholder="Apellido" required class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-uberGreen">
+                    <form id="ownerForm" onsubmit="submitForm(event, 'owner')" class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <input type="text" name="nombre" placeholder="Nombre" required class="w-full p-4 rounded-xl border border-gray-300 focus:ring-2 focus:ring-siamoOrange outline-none">
+                            <input type="text" name="apellido" placeholder="Apellido" required class="w-full p-4 rounded-xl border border-gray-300 focus:ring-2 focus:ring-siamoOrange outline-none">
                         </div>
-                        <input type="tel" name="telefono" placeholder="Teléfono / WhatsApp" required class="w-full p-3 mb-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-uberGreen">
-                        <div class="grid grid-cols-2 gap-4 mb-4">
-                            <input type="text" name="marca" placeholder="Marca" required class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-uberGreen">
-                            <input type="text" name="modelo" placeholder="Modelo" required class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-uberGreen">
+                        <input type="tel" name="telefono" placeholder="WhatsApp" required class="w-full p-4 rounded-xl border border-gray-300 focus:ring-2 focus:ring-siamoOrange outline-none">
+                        <div class="grid grid-cols-2 gap-4">
+                            <input type="text" name="marca" placeholder="Marca" required class="w-full p-4 rounded-xl border border-gray-300 focus:ring-2 focus:ring-siamoOrange outline-none">
+                            <input type="text" name="modelo" placeholder="Modelo" required class="w-full p-4 rounded-xl border border-gray-300 focus:ring-2 focus:ring-siamoOrange outline-none">
                         </div>
-                        <input type="number" name="anio" placeholder="Año" required class="w-full p-3 mb-6 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-uberGreen">
+                        <input type="number" name="anio" placeholder="Año (2014+)" required class="w-full p-4 rounded-xl border border-gray-300 focus:ring-2 focus:ring-siamoOrange outline-none">
                         
-                        <button type="submit" class="w-full bg-uber text-white font-bold py-3 rounded-lg hover:bg-gray-800 transition flex justify-center items-center gap-2">
-                            Enviar y hablar por WhatsApp <i data-lucide="send" class="w-4 h-4 text-uberGreen"></i>
+                        <button type="submit" class="w-full bg-siamoBlue text-white font-bold py-4 rounded-xl hover:bg-black transition-all shadow-lg flex justify-center items-center gap-2">
+                            Enviar y Hablar por WhatsApp <i data-lucide="message-square" class="w-5 h-5 text-siamoOrange"></i>
                         </button>
-                        <p id="mensaje-owner" class="hidden mt-4 text-center font-medium"></p>
                     </form>
                 </div>
 
-                <div id="choferes" class="bg-gray-50 p-8 rounded-2xl border border-gray-200">
-                    <h3 class="text-2xl font-bold text-uber mb-2">Registro de Choferes</h3>
-                    <p class="text-gray-500 mb-4 text-sm">Postulate y empezá a manejar hoy mismo.</p>
+                <div id="choferes" class="bg-gray-50 p-10 rounded-3xl border border-gray-200 shadow-sm">
+                    <h3 class="text-2xl font-bold text-siamoBlue mb-2">Postulación Chofer</h3>
+                    <p class="text-gray-500 mb-6">Buscamos gente responsable en Mendoza.</p>
 
-                    <div class="bg-white border border-gray-100 p-5 rounded-xl mb-6 shadow-inner text-center">
-                        <p class="text-uber font-semibold mb-3">¿Querés que te contactemos más rápido?</p>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe_FISz44VqGkorkiO48YIMP6DOK-Nq159U_UtaVQvavSMyjA/viewform?usp=publish-editor" target="_blank" class="inline-flex items-center gap-2 bg-uberGreen text-white px-5 py-2.5 rounded-full font-semibold hover:bg-uberGreenHover transition text-sm shadow">
-                            <i data-lucide="forms" class="w-4 h-4"></i>
-                            Completar Formulario Prioritario
-                        </a>
-                    </div>
-                    <form id="driverForm" onsubmit="submitForm(event, 'driver')">
-                        <div class="grid grid-cols-2 gap-4 mb-4">
-                            <input type="text" name="nombre" placeholder="Nombre" required class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-uberGreen">
-                            <input type="text" name="apellido" placeholder="Apellido" required class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-uberGreen">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe_FISz44VqGkorkiO48YIMP6DOK-Nq159U_UtaVQvavSMyjA/viewform" target="_blank" class="block w-full text-center bg-white border-2 border-dashed border-siamoOrange p-4 rounded-2xl mb-6 hover:bg-orange-50 transition-colors">
+                        <span class="text-siamoBlue font-bold block">¿Querés prioridad?</span>
+                        <span class="text-siamoOrange text-sm">Completar Formulario de Google</span>
+                    </a>
+
+                    <form id="driverForm" onsubmit="submitForm(event, 'driver')" class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <input type="text" name="nombre" placeholder="Nombre" required class="w-full p-4 rounded-xl border border-gray-300 focus:ring-2 focus:ring-siamoOrange outline-none">
+                            <input type="text" name="apellido" placeholder="Apellido" required class="w-full p-4 rounded-xl border border-gray-300 focus:ring-2 focus:ring-siamoOrange outline-none">
                         </div>
-                        <div class="grid grid-cols-2 gap-4 mb-4">
-                            <input type="tel" name="telefono" placeholder="Teléfono" required class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-uberGreen">
-                            <input type="number" name="edad" placeholder="Edad" required class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-uberGreen">
-                        </div>
-                        <select name="licencia" required class="w-full p-3 mb-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-uberGreen bg-white">
-                            <option value="">¿Licencia profesional?</option>
-                            <option value="Si">Sí</option>
-                            <option value="No">No (Particular)</option>
-                        </select>
-                        <select name="experiencia" required class="w-full p-3 mb-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-uberGreen bg-white">
-                            <option value="">Experiencia previa</option>
-                            <option value="Si">Tengo experiencia</option>
-                            <option value="No">Sin experiencia</option>
-                        </select>
-                        <select name="turno" required class="w-full p-3 mb-6 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-uberGreen bg-white">
-                            <option value="">Turno deseado</option>
-                            <option value="Día">Turno Día</option>
-                            <option value="Noche">Turno Noche</option>
-                            <option value="Completo">Auto 24hs</option>
+                        <input type="tel" name="telefono" placeholder="WhatsApp" required class="w-full p-4 rounded-xl border border-gray-300 focus:ring-2 focus:ring-siamoOrange outline-none">
+                        <select name="turno" required class="w-full p-4 rounded-xl border border-gray-300 focus:ring-2 focus:ring-siamoOrange outline-none bg-white">
+                            <option value="">Turno Preferido</option>
+                            <option value="Día">Mañana (12hs)</option>
+                            <option value="Noche">Noche (12hs)</option>
+                            <option value="Completo">Auto a Cargo (24hs)</option>
                         </select>
                         
-                        <button type="submit" class="w-full bg-uberGreen text-white font-bold py-3 rounded-lg hover:bg-uberGreenHover transition flex justify-center items-center gap-2 shadow-lg">
-                            Enviar Solicitud <i data-lucide="send" class="w-4 h-4"></i>
+                        <button type="submit" class="w-full bg-siamoOrange text-white font-bold py-4 rounded-xl hover:bg-siamoOrangeHover transition-all shadow-lg flex justify-center items-center gap-2">
+                            Postularme ahora <i data-lucide="chevron-right" class="w-5 h-5"></i>
                         </button>
-                        <p id="mensaje-driver" class="hidden mt-4 text-center font-medium"></p>
                     </form>
                 </div>
 
@@ -177,66 +161,30 @@
         </div>
     </section>
 
-    <section id="redes" class="py-20 bg-white px-4">
-        <div class="max-w-6xl mx-auto text-center">
-            <div class="mb-16">
-                <h2 class="text-3xl font-bold text-uber">Seguinos en nuestras redes</h2>
-                <p class="text-lg text-gray-600 mt-2">Mantenete al tanto de novedades, consejos y ofertas de Siamo Driver.</p>
-                <div class="w-24 h-1 bg-uberGreen mx-auto mt-4"></div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <a href="https://www.facebook.com/profile.php?id=61583685332863" target="_blank" class="block bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:border-uberGreenHover hover:shadow-lg transition group">
-                    <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full bg-white shadow-inner">
-                        <svg class="w-10 h-10 text-uberGreen group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                        </svg>
-                    </div>
-                    <h4 class="text-xl font-bold text-uber">Facebook</h4>
-                    <p class="text-gray-600 mt-2 text-sm">Comunidad y noticias locales.</p>
-                </a>
-
-                <a href="https://www.instagram.com/siamodrivermza/" target="_blank" class="block bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:border-uberGreenHover hover:shadow-lg transition group">
-                    <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full bg-white shadow-inner">
-                        <svg class="w-10 h-10 text-uberGreen group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.919-.058-1.265-.069-1.646-.069-4.849 0-3.204.013-3.583.069-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.668-.073-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
-                        </svg>
-                    </div>
-                    <h4 class="text-xl font-bold text-uber">Instagram</h4>
-                    <p class="text-gray-600 mt-2 text-sm">Fotos de unidades y consejos diarios.</p>
-                </a>
-
-                <a href="https://www.tiktok.com/@siamo.driver" target="_blank" class="block bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:border-uberGreenHover hover:shadow-lg transition group">
-                    <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full bg-white shadow-inner">
-                        <svg class="w-10 h-10 text-uberGreen group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.17-2.89-.6-4.09-1.47-.88-.64-1.62-1.47-2.11-2.44v10.8c0 2.49-1.51 4.89-4.07 5.59-1.49.41-3.11.34-4.55-.26-2.02-.84-3.41-2.92-3.41-5.04 0-2.02 1.34-3.9 3.25-4.53 1.12-.37 2.38-.27 3.41.27v-4.17c-1.63-.37-3.38-.34-4.92.17C2.7 9.8 0 12.9 0 16.5c0 3.1 1.8 6.1 4.7 7.1 1.9.6 4.1.4 5.9-.2 2.5-.9 4.3-3.6 4.3-6.2v-11c.01-2.07.01-4.14.01-6.21Z"/>
-                        </svg>
-                    </div>
-                    <h4 class="text-xl font-bold text-uber">TikTok</h4>
-                    <p class="text-gray-600 mt-2 text-sm">Videos con informacion.</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <footer id="contacto" class="bg-uber text-white py-12 px-4 text-center border-t-4 border-uberGreen">
+    <footer id="contacto" class="bg-siamoBlue text-white py-16 px-4 text-center border-t-8 border-siamoOrange">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl font-bold mb-6">Contactanos en Mendoza</h2>
-            <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-8">
-                <a href="https://wa.me/5492615010211" target="_blank" class="inline-flex items-center gap-2 bg-white text-uber px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition">
-                    <i data-lucide="message-circle" class="text-uberGreen"></i> WhatsApp: 261 5010211
+            <h2 class="text-3xl font-bold mb-10">Contacto Directo</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-12">
+                <a href="https://wa.me/5492615010211" class="group bg-white/5 border border-white/10 px-8 py-4 rounded-2xl hover:bg-white/10 transition-all flex items-center gap-4">
+                    <div class="bg-siamoOrange p-2 rounded-lg"><i data-lucide="phone" class="text-white"></i></div>
+                    <div class="text-left">
+                        <p class="text-xs text-gray-400">WhatsApp</p>
+                        <p class="font-bold">261 5010211</p>
+                    </div>
                 </a>
-                <a href="mailto:godrivermza@gmail.com" class="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-3 rounded-full font-bold hover:bg-gray-800 transition border border-gray-700">
-                    <i data-lucide="mail" class="text-uberGreen"></i> godrivermza@gmail.com
+                <a href="mailto:godrivermza@gmail.com" class="group bg-white/5 border border-white/10 px-8 py-4 rounded-2xl hover:bg-white/10 transition-all flex items-center gap-4">
+                    <div class="bg-siamoOrange p-2 rounded-lg"><i data-lucide="mail" class="text-white"></i></div>
+                    <div class="text-left">
+                        <p class="text-xs text-gray-400">Email</p>
+                        <p class="font-bold">godrivermza@gmail.com</p>
+                    </div>
                 </a>
             </div>
-            <div class="text-sm text-gray-500 border-t border-gray-900 pt-8">
-                &copy; 2026 Siamo Driver - Gestión de Flotas.
-            </div>
+            <p class="text-gray-500 text-sm italic">Mendoza, Argentina - &copy; 2026 Siamo Driver</p>
         </div>
     </footer>
 
-    <a href="https://wa.me/5492615010211" target="_blank" class="fixed bottom-6 right-6 bg-uberGreen text-white p-4 rounded-full shadow-2xl hover:bg-uberGreenHover hover:scale-110 transition-transform z-50">
+    <a href="https://wa.me/5492615010211" target="_blank" class="fixed bottom-8 right-8 bg-siamoOrange text-white p-5 rounded-full shadow-2xl hover:scale-110 transition-transform z-50">
         <i data-lucide="message-circle" class="w-8 h-8"></i>
     </a>
 
@@ -248,42 +196,26 @@
             event.preventDefault();
             const form = event.target;
             const btn = form.querySelector('button[type="submit"]');
-            const originalBtnHtml = btn.innerHTML;
-            const msgBox = document.getElementById(`mensaje-${type}`);
+            const originalText = btn.innerHTML;
             const formData = new FormData(form);
             const data = Object.fromEntries(formData);
             
-            btn.innerHTML = `<i data-lucide="loader-2" class="w-5 h-5 animate-spin"></i> Guardando...`;
+            btn.innerHTML = `<i data-lucide="loader-2" class="w-5 h-5 animate-spin"></i> Enviando...`;
             btn.disabled = true;
             lucide.createIcons();
 
-            try {
-                // Simulación exitosa para que la redirección funcione
-                await new Promise(resolve => setTimeout(resolve, 800));
-
-                msgBox.classList.remove('hidden');
-                msgBox.classList.add('text-green-600', 'bg-green-100', 'p-3', 'rounded-lg', 'mt-4');
-                msgBox.innerText = "¡Datos guardados con éxito!";
-                
+            setTimeout(() => {
                 let waMessage = type === 'owner' 
-                    ? `Hola Siamo Driver! Soy ${data.nombre} ${data.apellido}. Registré mi auto ${data.marca} ${data.modelo} (${data.anio}) en la web.`
-                    : `Hola Siamo Driver! Soy ${data.nombre} ${data.apellido}. Completé mi postulación para chofer. Licencia: ${data.licencia}.`;
+                    ? `Hola Siamo Driver! Soy ${data.nombre} ${data.apellido}. Registro mi auto: ${data.marca} ${data.modelo} (${data.anio}).`
+                    : `Hola Siamo Driver! Soy ${data.nombre} ${data.apellido}. Me postulo para el turno: ${data.turno}.`;
                 
-                setTimeout(() => {
-                    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waMessage)}`, '_blank');
-                    msgBox.classList.add('hidden');
-                    form.reset();
-                }, 1200);
-
-            } catch (error) {
-                msgBox.classList.remove('hidden');
-                msgBox.classList.add('text-red-600', 'bg-red-100', 'p-3', 'rounded-lg', 'mt-4');
-                msgBox.innerText = "Error. Intente por WhatsApp directamente.";
-            } finally {
-                btn.innerHTML = originalBtnHtml;
+                window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waMessage)}`, '_blank');
+                
+                btn.innerHTML = originalText;
                 btn.disabled = false;
+                form.reset();
                 lucide.createIcons();
-            }
+            }, 800);
         }
     </script>
 </body>
